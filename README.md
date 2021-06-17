@@ -25,3 +25,9 @@ Run `ng e2e` to execute the end-to-end tests via a platform of your choice. To u
 ## Further help
 
 To get more help on the Angular CLI use `ng help` or go check out the [Angular CLI Overview and Command Reference](https://angular.io/cli) page.
+
+
+## TribeHire Frontend UI reference
+https://user-images.githubusercontent.com/78395358/122439990-b6156480-cfce-11eb-95bf-3c288734a5ce.png
+
+https://user-images.githubusercontent.com/78395358/122440034-c3325380-cfce-11eb-8602-cfb24656bffa.png
