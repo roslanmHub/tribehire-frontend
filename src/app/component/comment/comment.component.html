@@ -1,0 +1,50 @@
+<div class="content-wrapper">
+    <div class="nav" *ngIf="!isLoading">
+        <button class="btn" (click)="goBack()">
+            <i class="fas fa-arrow-left"></i>
+        </button>
+        <nav class="navbar navbar-expand-sm ml-auto">
+            <input class="form-control" [(ngModel)]="searchInput" (ngModelChange)="filter()" type="search" placeholder="Search" aria-label="Search">
+        </nav>
+    </div>
+    <div class="row comment-container" *ngIf="!isLoading">
+        <div class="col-12">
+            <div class="list-group list-group-post" id="list-tab" role="tablist">
+                <a class="list-group-item list-group-item-action flex-column align-items-start postbox list-group-item">
+                    <div class="d-flex w-100 justify-content-between">
+                        <p class="h5 post-title">{{postData?.title}}</p>
+                    </div>
+                    <p class="mb-1 post-body">{{postData?.body}}</p>
+                </a>
+            </div>
+        </div>
+        <div class="col-12">
+            <div class="list-group list-group-comment" id="list-tab" role="tablist">
+                <a *ngFor="let comment of getFilteredComments()" class="list-group-item list-group-item-action flex-column align-items-start postbox list-group-item-comment">
+                    <div class="row">
+                        <div class="col-md-1 col-sm-2 initals">
+                            <div class="circle">
+                                <span class="initials">{{getInitials(comment['name'])}}</span>
+                            </div>
+                        </div>
+                        <div class="col-md-11 col-sm-10 name">
+                            <div class="d-flex w-100 justify-content-between">
+                                <h6 class="mb-1">{{comment['name']}}</h6>
+                            </div>
+                            <div class="d-flex w-100 justify-content-between">
+                                <p class="mb-1">{{comment['email']}}</p>
+                            </div>
+                        </div>
+                    </div>
+                    <br>
+                    <p class="mb-1">{{comment['body']}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" *ngIf="isLoading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>

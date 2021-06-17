@@ -1,0 +1,65 @@
+.comment-container {
+    max-height: 80vh;
+    overflow-y: scroll;
+}
+
+.circle {
+    background-color: #ccc;
+    border-radius: 50%;
+    height: 50px;
+    text-align: center;
+    width: 50px;
+}
+
+.initials {
+    position: relative;
+    top: 25%;
+}
+
+.content-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+    height: 100vh;
+}
+
+.postbox {
+    cursor: pointer;
+}
+
+.list-group-item-comment {
+    background-color: transparent;
+}
+
+.list-group-item.active {
+    background-color: #30dac4;
+}
+
+.list-group-comment {
+    background: radial-gradient(100% 99.68% at 0% 2.59%, rgba(255, 255, 255, 0.8) 0%, rgba(255, 255, 255, 0.5) 100%);
+    border: 2px solid #FFFFFF;
+    box-sizing: border-box;
+    box-shadow: 0px 0px 12px rgba(1, 156, 193, 0.25);
+    backdrop-filter: blur(15px);
+    max-height: 60vh;
+    overflow-y: scroll;
+}
+
+.post-title {
+    color: #20b2aa;
+}
+
+.post-body {
+    color: #313131;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+@media only screen and (max-width: 768px) {
+    .initals {
+        width: 20%;
+    }
+    .name {
+        width: 80%;
+    }
+}

@@ -1,0 +1,19 @@
+<div class="content-wrapper">
+    <div class="row comment-container" *ngIf="!isLoading">
+        <div class="col-12">
+            <div class="list-group list-group-post" id="list-tab" role="tablist" *ngIf="postList && postList.length > 0">
+                <a *ngFor="let post of postList" class="list-group-item list-group-item-action flex-column align-items-start postbox list-group-item" (click)="openComment(post['id'])">
+                    <div class="d-flex w-100 justify-content-between">
+                        <p class="h5 post-title">{{post['title']}}</p>
+                    </div>
+                    <p class="mb-1 post-body">{{post['body']}}</p>
+                </a>
+            </div>
+        </div>
+    </div>
+    <div class="text-center" *ngIf="isLoading">
+        <div class="spinner-border" role="status">
+            <span class="sr-only">Loading...</span>
+        </div>
+    </div>
+</div>
