@@ -1,0 +1,14 @@
+#wrap {
+    margin: 0 auto;
+    width: 80%;
+}
+
+#outlet {
+    width: 100%;
+    height: 100%;
+}
+
+#app {
+    position: relative;
+    width: 100%;
+}
