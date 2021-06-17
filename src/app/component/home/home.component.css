@@ -1,0 +1,24 @@
+.content-wrapper {
+    padding-top: 20px;
+    padding-bottom: 20px;
+    overflow: hidden;
+}
+
+.postbox {
+    cursor: pointer;
+}
+
+.post-title {
+    color: #20b2aa;
+}
+
+.post-body {
+    color: #313131;
+    font-size: 14px;
+    line-height: 24px;
+}
+
+.comment-container {
+    max-height: 80vh;
+    overflow-y: scroll;
+}

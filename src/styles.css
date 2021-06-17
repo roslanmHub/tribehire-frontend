@@ -1,1 +1,21 @@
 /* You can add global styles to this file, and also import other style files */
+
+html,
+body {
+    width: 100%;
+    min-height: 100%;
+    min-height: 99vh;
+    height: 100%;
+    overflow: hidden
+}
+
+body {
+    margin: 0;
+    font-family: Roboto, "Helvetica Neue", sans-serif;
+    background-color: #0093E9;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: radial-gradient(100% 347.93% at 0% 0%, #CBF4FF 0%, #E1F5E3 57.38%, #BFEDFA 100%);
+}
